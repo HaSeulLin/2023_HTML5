@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="icon" type="image/*" href="./img/참새.jpg">
+</head>
+<body>
+    <main>
+        <h1>기사제목입니다</h1>
+        <section>
+            <figure>
+                <img width="300" src="./img/참새.jpg" alt="참새">
+                <figcaption>위의 이미지는 
+                    <a href="https://pixabay.com/ko/photos/%ec%b0%b8%ec%83%88-%ec%83%88-%eb%8f%99%eb%ac%bc-%ec%9e%90%ec%97%b0-50346/">픽사베이</a>
+                에서 제공받았습니다</figcaption>
+                <!--인터넷 이미지 새탭열기 - 이미지 다운 대신 주소 복사해서 사용 가능-->
+            </figure>
+            <p>
+                기사내용입니다<br>
+                원하는 기사를 넣으셔도 됩니다
+            </p>
+            <p>
+                <span><i>작성자 홍길동</i></span>
+            </p>
+        </section>
+        <hr>
+        <form action="#">
+            <div>
+                <p>이 기사에 대한 평가를 주세요</p>
+                <input type="radio" name="appraisal" value="great">
+                <span>&#128516;좋아요</span>
+                <input type="radio" name="appraisal" value="sad">
+                <span>&#128557;슬퍼요</span>
+                <input type="radio" name="appraisal" value="angry">
+                <span>&#128545;화나요</span>
+            </div>
+            <br>
+            <div>
+                <p>격려의 메시지와 후원을 받고 있습니다</p>
+                <label for="">닉네임</label>
+                <input type="text" name="nickname">
+                <label for="">비밀번호</label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <textarea name="의견" cols="66" rows="4" placeholder="메시지를 입력해주세요"></textarea>
+                <br>
+                <label for="">후원금</label>
+                <input type="number" step="1000" value="0" min="0">
+                <p>
+                    <span><ins>1000원</ins></span> 단위로 올라갑니다. 원하는 금액을 입력해주세요    
+                </p>
+                <input type="submit" value="제출">
+            </div>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <a href="#">회사소개</a> |
+        <a href="#">인재채용</a> | 
+        <a href="#">제휴제안</a> | 
+        <a href="#">개인정보처리방침</a> | 
+        &copy뉴스 
+    </footer>
+</body>
+</html>

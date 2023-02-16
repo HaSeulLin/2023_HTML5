@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image: url(./img/background.jpg);">
+    <a href="#링크">링크 위치로 이동</a>
+
+    <h1> <a name="style"></a>style 속성 확인</h1>
+    <p style="color:blue">색상을 파란색으로 바꿨습니다</p>
+    <p style="color:rgb(81, 197, 126)">색상을 (rgb)81.197.126으로 바꿨습니다</p>
+    <p style="color:rgb(255,0,0)">색상을 빨간색으로</p>
+    <p style="color:#6666CC">16진수 컬러 #6666CC 적용</p>
+    <p style="color:#6C733D"><b>#6C733D</b> 컬러</p>
+    <!--p 값 내에서만 스타일 적용-->
+    <p>스타일이 적용되지 않습니다</p>
+    <p style="background-color:blueviolet">배경색을 청보라</p>
+    <p style="background-color: yellow;">배경 노랑</p>
+    <p style="background-color: azure;color: blue;">둘다 적용</p>
+    <p style=
+    "color: beige;
+    background-color: #6C733D;"
+    > 배경과 글자색상 변경</p>
+    <p style="background-image: url(./img/background.jpg);
+    color: aliceblue;">하늘배경 이미지 삽입</p>
+    <p style="background: url(./img/background.jpg);">ㅇㅇ</p>
+
+    <!-- ./ 쳐서 자동완성 url -->
+
+    <hr>
+    <h1> <a name="링크"></a>링크 </h1>
+    <a href="https://www.naver.com/">네이버</a> <br>
+    <a href="HTML 텍스트.html">html 텍스트 파일</a> <br>
+    <a href="./img/background.jpg">이미지</a>
+    <p>
+        외부의 웹 사이트나 같은 위치 또는 폴더에 있는 파일을 연결할 수 있다
+    </p>
+    <a href="./img/background.jpg" target="_blank">새 창 이미지</a> <br>
+    <a href="./HTML 텍스트 실습.html">방문한 링크</a> <br>
+    <a href="./aaa.txt">방문하지않은 링크</a>
+    <a href="#bookmark"><p>제목 3으로 북마크</p></a>
+    <h2><a name="bookmark"></a>제목 3</h2>
+    <p>
+        <a href="#style">스타일로 이동</a>
+    </p>
+    <p>
+        a 태그를 통해서 책갈피를 만들 수 있다 <br>
+        클릭할 링크 : href="" 속성을 가짐 <br>
+        이동되는 위치의 링크 : name="" 속성을 가짐
+    </p>
+    <hr>
+    <h1>이미지</h1> <!--현재 이미지 원본 크기 그대로 들어감-->
+    <img src="./img/background.jpg" alt="그림입니다">
+    <img src="./img/background.jpg" alt="그림입니다" width="300">
+    <p>
+        img 태그는 파일의 위치를 적어서 불러온다 <br>
+        파일의 위치: ./ > 현재 폴더 위치에서 찾기 <br>
+        현재 폴더 이치: 지금 작성하고 있는 파일이 있는 폴더 <br>
+    </p>
+    <!--이미지에 링크-->
+    <hr>
+    <h1>리스트</h1>
+    <!-- ul 순서가 없는 리스트-->
+    <ul>
+        <!-- 각각의 리스트는 li로 표현-->
+        <li>순서가 없는 리스트</li>
+        <li>순서가 없는 리스트</li>
+        <li>순서가 없는 리스트</li>
+    </ul>
+    <!-- ol 순서가 있는 리스트-->
+    <ol>
+        <li>첫번째</li>
+        <li>두번째</li>
+    </ol>
+    <!--dl 정의 리스트-->
+    <dl>
+        <!--dt 정의 리스트 제목(title)-->
+        <dt>HTML</dt>
+        <!--dd 정의 정보(data)-->
+        <dd>하이퍼텍스트 마크업 언어</dd>
+    </dl>
+    <dl>
+        <dt>링크</dt>
+        <dd>하이퍼링크로 다른 페이지로 이동할 수 있다</dd>
+    </dl>
+
+    <hr>
+    <h1>테이블 표</h1>
+    <!--border:상자 solid:실선 1px:두께-->
+    <table style="border: solid 1px black;">
+        <!--colspan="2"는 2열까지 합친다 (내용은 밀려남)-->
+        <tr style="border: solid 1px red;">
+            <th  colspan="2" style="border: solid 1px blue";>제목1</th>
+            <th  colspan="1" style="border: solid 1px blue";>제목2</th>
+            <th>제목3</th>
+        </tr>
+        <tr>
+            <td rowspan="2" style="border: solid 1px blue;">
+                내용이 들어갑니다
+            <td rowspan="2" style="border: solid 1px blue;"> 두번째 내용입니다</td>
+                <td>세번째 내용입니다</td>
+                <td>네번째 내용입니다</td>
+        </td>
+        </tr>
+        <tr>
+            <td>세번째 내용입니다</td>
+        </tr>
+        <p>
+            테이블 태그는 tr로 열을 작성하고 td로 안에 셀을 만든다. <br>
+            tr: table row(행), td: table data(셀),
+            th: table header(h1태그처럼생각) <br>
+            colspan: 오른쪽에 있는 셀을 확장 <br>
+            rowspan: 아래쪽에 있는 셀을 확장 <br>
+        </p>
+    </table>
+</body>
+</html>

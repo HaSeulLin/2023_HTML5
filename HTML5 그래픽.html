@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page Title</title>
+    <link rel="icon" type="image/svg" href="./img/user-solid.svg">
+</head>
+<body>
+    <h1>canvas</h1>
+    <canvas id="myCanvas" width="200" height="100"
+            style="border:1px solid black;"
+    >
+    </canvas>
+    <p>
+        canvas는 canvas태그를 이용하여 위치를 지정하고 그안에는 JS이용하여서 관련 그림, 그래픽을 넣을 수 있다 <br>
+        픽셀로 화면에 출력되기에 확대하면 계단현상이 일어난다 <br>
+        canvas 이용해서 애니메이션 형식으로도 만들 수 있다
+    </p>    
+    <!--script에 자바스크립트 작성-->
+    <!-- ctx.stroke 사용해야 화면에 그림 결과 출력-->
+    <script>
+        let paper = document.getElementById("myCanvas");
+        let context = paper.getContext("2d");
+        
+        context.fillStyle = "#F00000";
+        context.fillRect(0,0,150,75);
+        context.fillStyle = "#0000FF";
+        context.fillRect(10,10,150,75);
+
+        context.strokeStyle="#000000";
+        context.moveTo(0,0);
+        context.lineTo(200,100);
+        context.stroke();
+
+        context.beginPath();
+        context.arc(95,50,40,0,2*Math.PI);
+        context.stroke();
+
+        context.fillStyle = "#FFFF00"
+        context.font="20px Arial";
+        context.fillText("Hello World",10,50);
+        context.strokeStyle="#F00000";
+        context.strokeText("Hi",20,70);
+        /*개발자주석. 자바스크립트는 위에서 아래로 실행
+        .명령어() ; 이 형태를 통해 명령어를 실행할 수 있다
+        let 변수이름= 값: 값을 변수에 담아서 사용한다
+        */
+        // gradient생성
+        let grd
+        =context.createRadialGradient(75,50,5,90,60,100);
+        grd.addColorStop(0,"green");
+        grd.addColorStop(1,"yellow");
+        // gradient사용
+        context.fillStyle=grd;
+        context.fillRect(10,10,150,80);
+    </script>
+
+
+    <h1>SVG</h1>
+    <svg width="200" height="100" style="border: solid black 1px">
+        <line
+            x1="50" y1="50" x2="20" y2="90"
+            stroke="orange"
+            stroke-width="5"
+        ></line>
+
+        <circle cx="50" cy="50" r="40"
+        stroke="greed"
+        stroke-width="4" fill="yellow"
+        opacity="0.2"
+        ></circle>
+    </svg>
+
+    <svg width="100"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+    <img width="100" src="./img/user-solid.svg" alt="">
+    <p>
+        svg는 웹용 벡터 파일 > 웹에서 열어서 확인할 수 있다 <br>
+        코드로도 들고올 수 있고 파일 형식으로도 들고올 수 있다 <br>
+        벡터 형식이기 떄문에 확대해도 깨지지 않는다
+    </p>
+</body>
+</html>

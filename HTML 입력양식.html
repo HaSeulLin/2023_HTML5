@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form을 이용한 입력 양식</h1>
+    <h2>input의 type</h2>
+    <div style="background-color: aquamarine;">
+        <label>한줄메모</label>
+        <input type="text" value="안녕">
+    </div>
+    <div>
+        <label>패스워드</label>
+        <input type="password"> <!--.....패스워드 보이기로 입력됨-->
+    </div>
+    <p>input 태그는 인라인속성이다</p>
+
+    <h3>라디오 버튼</h3>
+    <!--name으로 같은 묶음 정함(택1)-->
+    <div style="background-color: beige; width: 250px; text-align: center;">
+        <label><b>[오늘의 점심]</b></label> <br>
+        <input type="radio" name="food" value="양식"> 양식
+        <input type="radio" name="food" value="중식"> 중식
+        <input type="radio" name="food" value="한식" disabled> 한식
+    </div>
+    <p>
+        radio타입의 경우 name을 통해서 그룹으로 묶임 <br>
+        그룹으로 묶였을 경우 그룹 중에 하나만 선택 가능 <br>
+        input 태그의 value 속성은 서버로 보낼 값이 된다 <br>
+        text나 password처럼 값을 입력 받는 경우가 아니라면 미리 적어둔다
+    </p>
+
+    <h3>체크박스</h3>
+    <div>
+        <label>읽은 책</label> <br>
+        <input type="checkbox" name="book" value="죄와 벌"> 죄와 벌 <br>
+        <input type="checkbox" name="book" value="까라마조프 가의 형제들"> 까라마조프 가의 형제들 <br>
+        <input type="checkbox" name="book" value="데미안"> 데미안 <br>
+        <input type="checkbox" name="book" value="데미안" disabled> 주홍글씨 <br>
+    </div>
+    <br>
+    <div>
+        <label>컴퓨터 언어</label> <br>
+        <input type="checkbox" name="언어" value="html" checked> <span style="color:blueviolet">HTML</span>
+        <input type="checkbox" name="언어" value="CSS"> <span><i>CSS</i></span>
+        <input type="checkbox" name="언어" value="JavaScript"> <span>JavaScript</span>
+        <input type="checkbox" name="언어" value="C++" disabled> <span>C++</span>
+    </div>
+    <p>
+        체크박스는 여러개를 선택할 떄 사용할 수 있다 type이다<br>
+        checked, disabled로 체크박스의 상태를 작성할 수 있다 <br>
+        라디오 버튼도 동일하게 적용
+    </p>
+    <h3>파일 선택</h3>
+    <div>
+        <label>이미지 파일 선택</label>
+        <input type="file" name="" accept="image/*">
+    </div>
+
+    <h2>input이 아닌 입력창</h2>
+    <h3>SELECT</h3>
+    <div>
+        <select name="fruit">
+            <option value="none" selected disabled>none</option>
+            <option value="apple">apple</option>
+            <option value="orange">orange</option>
+            <option value="pear">pear</option>
+            <option value="peach">peach</option>
+        </select>
+    </div>
+    <p>
+        selected로 리스트에 보이는 첫번째 고를 수 있다
+    </p>
+
+    <h3>textarea</h3>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <p>크기를 cols와 rows를 통해서 지정</p>
+
+    <h3>button</h3>
+    <button type="button" onclick="alert('버튼을 클릭하셨군요?')">
+        버튼을 눌러주세요
+    </button> <!--버튼 누르면 팝업으로 alert안 문자 출력-->
+
+    <h3>form을 통한 입력값 전달submit</h3>
+    <form action="서버측 웹페이지" method="get">
+        <input type="text" name="nickname" value="이름"><br>
+        <input type="submit" value="전송">
+        <button type="submit">버튼으로 전송</button>
+    </form>
+    <!--입력 전송 후 입력값 전달된 페이지 이동-->
+    <!--작성한 입력값은 주소창에 name=value 형태로 전달이 되어진다: method get-->
+    <!--값을 전달할 때는 form을 통해서 전달-->
+    <!--form 안에 있는 submit타입의 태그를 통해 전달됨-->
+    <!--method="post"로 할 시 주소창에 정보값 x 따로 전달-->
+    <!--submit은 반드시 form과 함께 사용되어 전달-->
+
+    <h3>fieldset</h3>
+    <form action="dd">
+        <fieldset>
+            <legend>입력양식</legend>
+            <label>이름: </label> <br>
+            <input type="text" name="username"><br>
+            <label>이메일: </label><br>
+            <input type="text" name="email"> <br><br>
+            <input type="submit" value="전송">
+        </fieldset>
+    </form>
+    <!--사각형으로 폼 꾸며줌-->
+
+    <h3>input의 text 타입 속성확인</h3>
+    <input type="text" value="초기값" readonly disabled>
+    <input type="text" maxlength="10" size="5" placeholder="힌트">
+    <!--maxlength:10글자까지 size:상자크기 placeholder:회색디폴트값-->
+</body>
+</html>

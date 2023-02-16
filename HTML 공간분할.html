@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>공간분할</h1>
+    <h2>display 블록</h2>
+    <div style="color:blue;">
+        <p style="border: solid 1px red;">p태그는 블록 속성입니다</p>
+        <h5 style="border: solid 1px red;">h태그들도 블록 속성입니다</h5>
+        <ol style="border: solid 1px red;">
+            <li>ol도 블록속성입니다</li>
+            <li>ol도 블록속성입니다</li>
+        </ol>
+    </div>
+    <div style="border: solid 1px black; color:brown; background-color: azure;">
+        <p>div의 style에 영향을 받는 태그입니다</p>
+        <p>div의 style에 영향을 받는 태그입니다</p>
+        <p>
+            div는 폰트 디자인을 함께 넣어줄 때 사용한다
+            border값은 div크기에 하나가 들어간다
+        </p>
+    </div>
+    <hr>
+    <h2>display 인라인</h2>
+    <a href="#" style="background-color: beige;">인라인속성을 가진 태그입니다</a>
+    <a href="#">새로운 인라인속성을 가진 태그입니다</a> <!--엔터x 바로 뒤에 출력-->
+    <img src="./img/background.jpg" alt="하늘" width="300">
+    <div>
+        <img src="./img/background.jpg" alt="하늘" width="300">
+        <p>
+            인라인속성의 태그들을 구분해 줄때는 div를 통해 줄을 바꿔주는 것이 용이
+            <br> br의 경우는 문자를 줄바꿈 할 때 사용
+        </p>
+    </div>
+    <p>
+        <span style="color:blue;">스판태그</span>를 사용하였습니다
+    </p>
+    <p>span태그는 특정한 글자에 스타일을 넣어줌</span></p>
+
+    <h3>인라인 속성의 iframe</h3>
+    <a href="./HTML 텍스트 실습.html" target="iframe-text">실습화면보기</a>
+    <a href="./HTML 텍스트.html" target="iframe-text">HTML 텍스트 화면으로 넘어가기</a>
+    <a href="./HTML 기본요소 실습.html" target="iframe-text">기본요소 실습 화면으로 넘어가기</a>
+    
+    <iframe src="./HTML 텍스트.html" frameborder="0"
+    style="width: 100%;" name="iframe-text"></iframe>
+
+    
+</body>
+</html>

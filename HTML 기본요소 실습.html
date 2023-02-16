@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color:aliceblue">
+    <a href="https://www.naver.com/" target="_blank">
+        <img src="./img/naver.png" alt="네이버">
+    </a>
+    <a href="https://www.daum.net/" target="_blank">
+        <img src="/img/daum.png" alt="다음">
+    </a>
+    <a href="https://www.daum.net/" target="_blank">
+        다음
+    </a>
+    <p>
+        a태그의 기능(하이퍼링크)와 이미지태그의 기능을 같이 쓰고 싶다면 태그 안에 태그를 넣어서 사용할 수 있다 <br>
+        범위를 생각해서 큰 범위로 쓸 기능으로 감싸주면 된다
+        <br> 태그 안의 속성 중 특정 태그만 쓸 수있는 속성이 있다
+        <br>
+    </p>
+    <hr>
+    <h1>메뉴판</h1>
+    <ul>
+        <li>커피</li>
+        <li>차</li>
+        <li>우유</li>
+    </ul>
+    <h2>안내</h2>
+        <h3>매장을 이용해 주시는 고객분들은 아래 절차를 따라 주세요</h3>
+    <ol>
+        <li>체온기 앞에서 체온을 잽니다</li>
+        <li>안심콜로 방문 등록을 합니다</li>
+        <li>비치된 손소독제로 손을 닦습니다</li>
+    </ol>
+    <dl>
+        <dt><h2>안내</h2></dt>
+        <dd>
+            <h3>매장을 이용해 주시는 고객분들은 아래 절차를 따라 주세요</h3>
+            <ol>
+                <li>체온기 앞에서 체온을 잽니다</li>
+                <li>안심콜로 방문 등록을 합니다</li>
+                <li>비치된 손소독제로 손을 닦습니다</li>
+            </ol>
+        </dd>
+    </dl>
+
+    <hr>
+    <h3>학생 명단입니다</h3>
+    <table style="border: solid 1px white;">
+        <tr style="border: solid 1px white;">
+            <th colspan="3" style="border: solid 1px white;" width="400">A반</th>
+        </tr>
+        <td style="border: solid 1px white;">에밀리</td>
+        <td style="border: solid 1px white;">토비</td>
+        <td style="border: solid 1px white;">제임스</td>
+        <tr>
+            <td style="border: solid 1px white;">16</td>
+            <td style="border: solid 1px white;">14</td>
+            <td style="border: solid 1px white;">10</td>
+        </tr>
+    </table>
+    <h3>새 학생 명단입니다</h3>
+    <table style="border: solid 1px white;">
+        <tr>
+            <th colspan="1" style="background-color: orangered;">반</th>
+            <th colspan="3" width="300" style="background-color: orangered;">A반(colspan=3)</th>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: pink;color:black;">학생 (rowspan=2)</td>
+            <td style="background-color:  pink;color:black;">에밀리</td>
+            <td style="background-color: pink;color:black;">토비</td>
+            <td style="background-color: pink;color:black;">제임스</td>
+        </tr>
+        <tr>
+            <td style="background-color: whitesmoke; color:black;">16</td>
+            <td style="background-color: whitesmoke; color:black;">14</td>
+            <td style="background-color: whitesmoke; color:black;">10</td>
+        </tr>
+    </table>
+</body>
+</html>

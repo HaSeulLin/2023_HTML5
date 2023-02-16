@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {color:red}
+        #text-color{color:chocolate}
+        .text-color{color:cadetblue}
+    </style>
+</head>
+<body>
+    <h2>CSS</h2>
+    <p style="color:blue">인라인 스타일 적용</p>
+    <p>내부스타일 시트 적용</p> <!-- 헤드 작성 -->
+    <p>모든 p태그는 내부 스타일 시트 적용</p>
+    <span>아무것도 적용되지 않은 상태: 웹브라우저의 기본 스타일</span> <br>
+    <span id="text-color">아이디를 이용한 스타일적용</span>
+    <span class="text-color">클래스를 이용한 스타일적용</span> <br>
+
+    <script>
+        document.getElementById("text-color")
+        .innerHTML="자바스크립트를 배워봅시다"
+    </script>
+</body>
+<p>p태그를 body 밖에서는 사용할 수 없지만 웹 브라우져에서 임의로 body 안으로 옮겨서 출력해준다</p>
+<p>끝태그가 없을 때도 임의로 생성해 준다 <!-- HTML은 이런 오류 임의로 수정해서 출력해주는 편 -->
+</html>

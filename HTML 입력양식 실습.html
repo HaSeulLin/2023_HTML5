@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>로그인 페이지 입니다</h1>
+    <form action="처리할페이지주소" method="post">
+        <table style="border: solid 3px black;">
+            <tr>
+                <td> 사용자 :</td>
+                <td>
+                    <input type="text" name="사용자" maxlength="10">
+                </td>
+                <td rowspan="2">
+                    <input type="submit" value="전송">
+                </td>
+            </tr>
+            <tr>
+                <td> 비밀번호 :</td>
+                <td>
+                    <input type="password" name="비밀번호" maxlength="10">
+                </td>
+            </tr>
+        </table>
+        <a href="#">비밀번호를 잃어버렸나요?</a>
+
+        <div style="border: solid 3px black; width:300px">
+            <div>
+                <label for="">사용자:</label>
+                <input type="text" />
+            </div>
+            <div>
+                <label for="">비밀번호:</label>
+                <input type="password" />
+            </div>
+        </div>
+        <input type="submit" value="전송">
+        <a href="https://www.naver.com/">비밀번호를 잃어버렸나요?</a>
+    </form>
+    <hr>
+    <fieldset style="border: double 5px brown; background-color: beige;">
+    <legend><h1>설문조사</h1></legend>
+    <ol>
+        <li>
+                <p>성별을 체크해 주세요</p>
+                <input type="radio" name="성별" value="man">남
+                <input type="radio" name="성별" value="woman">여
+                <input type="radio" name="성별" value="other">기타
+        </li>
+        <br>
+        <li>
+                <p>음식을 선택해주세요</p>
+                <input type="checkbox" name="food" value="한식">한식 <br>
+                <input type="checkbox" name="food" value="일식">일식 <br>
+                <input type="checkbox" name="food" value="중식">중식 <br>
+                <input type="checkbox" name="food" value="양식">양식 <br>
+        </li>
+        <br>
+        <li>
+            <div>
+                <p>기타의견을 남겨주세요</p>
+                <textarea name="memo" id="" cols="40" rows="5"></textarea>
+            </div>
+        </li>
+        <br>
+    </ol>
+    </fieldset>
+</body>
+</html>

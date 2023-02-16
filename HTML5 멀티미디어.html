@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML5 멀티미디어</h1>
+    <h2>video</h2>
+    <video src="./video/video.mp4"
+        style="width:576xpx; height: 360px;"
+        controls autoplay loop muted
+        ></video>
+        <p>
+            controls: 플레이버튼과 남은시간, 소리표시 <br>
+            autoplay: 자동실행 (단, muted상태일때) <br>
+            muted: 무음 <br>
+            loop: 계속 반복 <br>
+        </p>
+
+    <h2>플러그인</h2>
+    <h3>object</h3>
+    <object data="./data/3일차 HTML5.pdf" width="500px" height="300px"></object>
+    <p>object태그는 다양한 파일들을 화면에 출력하는 태그</p>
+
+    <h1>embed</h1>
+    <embed src="./data/3일차 HTML5.pdf" type="">
+    <embed src="./img/naver.png" type="">
+    <p> embed object와 동일하게 사용할 수 있다 </p>
+
+    <!--유투브 영상 소스 코드 복사하면 iframe 코드로 한번에 입력됨-->
+    <iframe width="700" height="450"
+    src="https://www.youtube.com/embed/rMJ8qLe6q3A?mute=1&autoplay=1&loop=1"
+    title="[가디언즈 오브 갤럭시: Volume 3] 티저 예고편"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+    ></iframe>
+    <p>
+        video의 설정을 유투브에서도 적용할 수 있다 <br>
+        url 뒤에 ?를 이용한 '쿼리스트링'으로 작성할 수 있다 <br>
+        ?mute=1&autoplay=1 같은 값으로 들어간다 <br>
+        1은 true, 실행. 0은 flase, 실행안함 <br>
+    </p>
+    <!--동영상 주소 뒤에 ?mute=1 붙여야 자동재생-->
+</body>
+</html>

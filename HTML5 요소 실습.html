@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{background-color: blue;}
+        a{color:white;}
+        footer{text-align:center;}
+    </style>
+</head>
+<body>
+    <h1>실습1</h1>
+        <nav>
+            <a href="./HTML5 요소 실습.html">메인</a> <span>|</span>
+            <a href="./게시판.html">게시판</a> <span>|</span>
+            <a href="./공지사항.html">공지사항</a>
+        </nav>
+        <section>
+            <h1>메인</h1>
+            <p>
+                위의 nav바의 링크를 클릭하면 이동합니다. 현재 위치는 메인입니다.
+            </p>
+        </section>
+
+    <footer>
+        <p>
+            Copyright 2023, 지은이 all rights reserved.
+        </p>
+        <p>
+            연락처: 02-1234-5678
+        </p>
+    </footer>
+
+    <h1>식당예약</h1>
+    <form action="./예약완료.html">
+        <p>식당예약 날짜와 시간을 입력해주세요</p>
+        <input type="date" name="" id="" value="2023-02-13" min="2023-02-13" max="2023-06-13">
+        <input type="time" name="" id="" value="00:00"> <br>
+        <label for="">이메일</label>
+        <input type="email" name="" id="" required> <br>
+        <p>
+            예약정보는 위의 이메일로 보내드리겠습니다
+        </p>
+        <p>
+            <input type="submit" value="전송">
+        </p>
+    </form>
+
+    <h1>실습3</h1>
+    <h2>아래 정보를 입력하여 회원가입을 하세요</h2>
+    <form action="">
+        <div>
+            <label for="">사용자아이디:</label>
+            <input type="text" name="id" id="id" placeholder="예시)apple" required> <br>
+
+        </div>
+        <div>
+            <label for="">비밀번호:</label>
+            <input type="password" name="password" id="password" placeholder="예시)1234" required> <br>
+        </div>
+        <div>
+            <label for="">이메일:</label>
+            <input type="email" name="" id="" required> <br>
+        </div>
+        <div>
+            <label for="">주소:</label>
+            <input type="text" name="" id="" required> <br>
+        </div>
+            <input type="submit" value="제출">
+    </form>
+</body>
+</html>
